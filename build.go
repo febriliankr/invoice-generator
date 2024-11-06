@@ -201,47 +201,53 @@ func (doc *Document) drawsTableTitles() {
 		"",
 	)
 
-	// Total HT
-	doc.pdf.SetX(ItemColTotalHTOffset)
-	doc.pdf.CellFormat(
-		ItemColTaxOffset-ItemColTotalHTOffset,
-		6,
-		doc.encodeString(doc.Options.TextItemsTotalHTTitle),
-		"0",
-		0,
-		"",
-		false,
-		0,
-		"",
-	)
+	if doc.Options.ShowTotalHT {
+		// Total HT
+		doc.pdf.SetX(ItemColTotalHTOffset)
+		doc.pdf.CellFormat(
+			ItemColTaxOffset-ItemColTotalHTOffset,
+			6,
+			doc.encodeString(doc.Options.TextItemsTotalHTTitle),
+			"0",
+			0,
+			"",
+			false,
+			0,
+			"",
+		)
+	}
 
-	// Tax
-	doc.pdf.SetX(ItemColTaxOffset)
-	doc.pdf.CellFormat(
-		ItemColDiscountOffset-ItemColTaxOffset,
-		6,
-		doc.encodeString(doc.Options.TextItemsTaxTitle),
-		"0",
-		0,
-		"",
-		false,
-		0,
-		"",
-	)
+	if doc.Options.ShowTax {
+		// Tax
+		doc.pdf.SetX(ItemColTaxOffset)
+		doc.pdf.CellFormat(
+			ItemColDiscountOffset-ItemColTaxOffset,
+			6,
+			doc.encodeString(doc.Options.TextItemsTaxTitle),
+			"0",
+			0,
+			"",
+			false,
+			0,
+			"",
+		)
+	}
 
-	// Discount
-	doc.pdf.SetX(ItemColDiscountOffset)
-	doc.pdf.CellFormat(
-		ItemColTotalTTCOffset-ItemColDiscountOffset,
-		6,
-		doc.encodeString(doc.Options.TextItemsDiscountTitle),
-		"0",
-		0,
-		"",
-		false,
-		0,
-		"",
-	)
+	if doc.Options.ShowDiscount {
+		// Discount
+		doc.pdf.SetX(ItemColDiscountOffset)
+		doc.pdf.CellFormat(
+			ItemColTotalTTCOffset-ItemColDiscountOffset,
+			6,
+			doc.encodeString(doc.Options.TextItemsDiscountTitle),
+			"0",
+			0,
+			"",
+			false,
+			0,
+			"",
+		)
+	}
 
 	// TOTAL TTC
 	doc.pdf.SetX(ItemColTotalTTCOffset)

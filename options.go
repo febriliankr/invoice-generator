@@ -5,6 +5,11 @@ type UnicodeTranslateFunc func(string) string
 
 // Options for Document
 type Options struct {
+	// Table Title Options
+	ShowTotalHT  bool
+	ShowTax      bool
+	ShowDiscount bool
+
 	AutoPrint bool `json:"auto_print,omitempty"`
 
 	CurrencySymbol    string `default:"€ " json:"currency_symbol,omitempty"`

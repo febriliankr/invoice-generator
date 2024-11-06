@@ -16,3 +16,9 @@ go get -u github.com/febriliankr/invoice-generator
 ## Forked
 
 From github.com/angelodlfrtr/go-invoice-generator
+
+## Text
+
+TextItemsTotalHTTitle
+TextItemsTaxTitle
+TextItemsDiscountTitle
