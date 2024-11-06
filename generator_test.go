@@ -25,6 +25,9 @@ func TestNew(t *testing.T) {
 		GreyTextColor:     []int{161, 96, 149},
 		GreyBgColor:       []int{171, 240, 129},
 		DarkBgColor:       []int{176, 12, 20},
+		CurrencySymbol:    "Rp",
+		CurrencyDecimal:   ",",
+		CurrencyThousand:  ".",
 		CurrencyPrecision: 2,
 	})
 

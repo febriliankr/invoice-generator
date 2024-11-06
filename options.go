@@ -34,10 +34,10 @@ type Options struct {
 	TextTotalTax        string `default:"TAX" json:"text_total_tax,omitempty"`
 	TextTotalWithTax    string `default:"TOTAL WITH TAX" json:"text_total_with_tax,omitempty"`
 
-	BaseTextColor []int `default:"[35,35,35]" json:"base_text_color,omitempty"`
+	BaseTextColor []int `default:"[10,10,10]" json:"base_text_color,omitempty"`
 	GreyTextColor []int `default:"[82,82,82]" json:"grey_text_color,omitempty"`
-	GreyBgColor   []int `default:"[232,232,232]" json:"grey_bg_color,omitempty"`
-	DarkBgColor   []int `default:"[212,212,212]" json:"dark_bg_color,omitempty"`
+	GreyBgColor   []int `default:"[250,250,250]" json:"grey_bg_color,omitempty"`
+	DarkBgColor   []int `default:"[250,250,250]" json:"dark_bg_color,omitempty"`
 
 	Font     string `default:"Helvetica"`
 	BoldFont string `default:"Helvetica"`
