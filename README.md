@@ -2,7 +2,7 @@
 [![Go Report Card](https://goreportcard.com/badge/github.com/febriliankr/invoice-generator)](https://goreportcard.com/report/github.com/febriliankr/invoice-generator)
 [![GoDoc](https://godoc.org/github.com/febriliankr/invoice-generator?status.svg)](https://godoc.org/github.com/febriliankr/invoice-generator)
 
-# Go Invoice Generator
+# Go Invoice Generator v1.0.3
 
 A super fast golang package to generate invoices, delivery notes and quotations as pdf
 using https://github.com/go-pdf/fpdf.
