@@ -1,6 +1,6 @@
 module github.com/febriliankr/invoice-generator
 
-go 1.23.0
+go 1.22.0
 
 require (
 	github.com/creasty/defaults v1.8.0
